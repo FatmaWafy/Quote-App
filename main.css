@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+  background: linear-gradient(135deg, #03a9f4, #ffffff);
+}
+.Quote-box {
+  width: 700px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+}
+.Quote-box h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.Quote-box h2::after {
+  content: "";
+  width: 75px;
+  height: 3px;
+  border-radius: 3px;
+  background: linear-gradient(135deg, #03a9f4, #ffffff);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.Quote-box blockquote {
+  font-size: 26px;
+  min-height: 110px;
+}
+.Quote-box blockquote::before,
+.Quote-box blockquote::after {
+  content: " '' ";
+}
+
+.Quote-box span {
+  display: block;
+  margin-top: 10px;
+  float: right;
+  position: relative;
+  font-weight: bold;
+}
+.Quote-box span::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: linear-gradient(135deg, #03a9f4, #ffffff);
+  top: 50%;
+  left: -30px;
+}
+.Quote-box div {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.Quote-box button {
+  width: 135px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: #fff;
+  background: #03a9f4;
+  border-radius: 25px;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 17px;
+}
+.Quote-box button:nth-child(2) {
+  background: transparent;
+  color: #333;
+  border: 1px solid #03a9f4;
+}
+.Quote-box button img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
